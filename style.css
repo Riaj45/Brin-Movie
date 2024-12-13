@@ -1,0 +1,101 @@
+/* Add animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+    animation: slideUp 1s ease-out; /* Animate slide up on load */
+}
+
+main {
+    animation: slideDown 1s ease-out; /* Animate slide down on load */
+}
+
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#search-bar {
+    padding: 0.5em;
+    margin-top: 1em;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 35px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
+}
+
+.item {
+    flex: 1 1 calc(33.333% - 1em);
+    max-width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.title {
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+.details {
+    text-align: center;
+    padding: 2em;
+}
+
+.details img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
